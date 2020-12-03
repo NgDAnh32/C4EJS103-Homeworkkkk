@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="getSize()" onresize="getSize()">
+<div id="wh"></div>
+<script> 
+    const getSize = () => {
+        const w = document.documentElement.clientWidth
+        const h = document.documentElement.clientHeight
+        document.getElementById('wh').innerHTML = "Width : " + w + " Height : " + h ;
+    }
+</script>   
+</body>
+</html>
