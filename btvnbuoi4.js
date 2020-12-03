@@ -163,10 +163,10 @@ for (i=0 ; i< library.length ; i++)
 // câu 5:
 function my_Clock() 
 {
-  this.cur_date = new Date();
-  this.hours = this.cur_date.getHours();
-  this.minutes = this.cur_date.getMinutes();
-  this.seconds = this.cur_date.getSeconds();
+  this.time = new Date();
+  this.hours = this.time.getHours();
+  this.minutes = this.time.getMinutes();
+  this.seconds = this.time.getSeconds();
   }
 my_Clock.prototype.run = function ()
   {
